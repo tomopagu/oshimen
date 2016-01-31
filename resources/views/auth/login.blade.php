@@ -49,7 +49,7 @@
                     <div class="form-group row">
                         <div class="col-sm-9 col-sm-offset-3">
                             <button type="submit" class="btn btn-primary btn-block">
-                                <i class="fa fa-btn fa-sign-in"></i>Login
+                                <i class="fa fa-btn fa-sign-in"></i> Login
                             </button>
 
                             <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>

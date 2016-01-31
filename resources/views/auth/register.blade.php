@@ -25,7 +25,7 @@
                             @endif
                         </div>
                     </div>
-                    
+
                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }} row">
                         <label for="email" class="col-sm-3 form-control-label">email</label>
                         <div class="col-sm-9">
@@ -49,7 +49,7 @@
                             @endif
                         </div>
                     </div>
-                    
+
                     <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }} row">
                         <label for="password_confirmation" class="col-sm-3 form-control-label">confirm password</label>
                         <div class="col-sm-9">
@@ -61,11 +61,11 @@
                             @endif
                         </div>
                     </div>
-                    
+
                     <div class="form-group row">
                         <div class="col-sm-9 col-sm-offset-3">
                             <button type="submit" class="btn btn-primary btn-block">
-                                <i class="fa fa-btn fa-user"></i>Register
+                                <i class="fa fa-btn fa-user"></i> Register
                             </button>
                         </div>
                     </div>
