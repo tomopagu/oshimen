@@ -3,24 +3,24 @@
     justify-content: center;
     display: flex;
     width: 100%;
-
 }
-@media (min-width: $screen-sm-min) {
+// @TODO: Swap these out for the variables
+@media (min-width: 544px) {
     .vertically-center .container {
         width: 576px;
     }
 }
-@media (min-width: $screen-md-min) {
+@media (min-width: 768px) {
     .vertically-center .container {
         width: 720px;
     }
 }
-@media (min-width: $screen-lg-min) {
+@media (min-width: 992px) {
     .vertically-center .container {
         width: 940px;
     }
 }
-@media (min-width: $screen-xl-min) {
+@media (min-width: 1200px) {
     .vertically-center .container {
         width: 1140px;
     }
