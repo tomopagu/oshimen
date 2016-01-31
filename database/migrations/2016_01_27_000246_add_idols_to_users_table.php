@@ -13,7 +13,7 @@ class AddIdolsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->binary('idols');
+            $table->text('idols')->after('remember_token');
         });
     }
 
