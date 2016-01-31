@@ -1,0 +1,26 @@
+.card.card-inverse .card-img-overlay {
+    background: rgba(0,0,0,0.7);
+    border-radius: .25rem;
+    opacity: 0;
+    transition: all 0.2s;
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.card.card-inverse:hover .card-img-overlay {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.user-alert {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.remove-idol {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}

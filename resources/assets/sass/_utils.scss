@@ -1,0 +1,27 @@
+.vertically-center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+
+}
+@media (min-width: $screen-sm-min) {
+    .vertically-center .container {
+        width: 576px;
+    }
+}
+@media (min-width: $screen-md-min) {
+    .vertically-center .container {
+        width: 720px;
+    }
+}
+@media (min-width: $screen-lg-min) {
+    .vertically-center .container {
+        width: 940px;
+    }
+}
+@media (min-width: $screen-xl-min) {
+    .vertically-center .container {
+        width: 1140px;
+    }
+}

@@ -1,0 +1,21 @@
+$enable-flex: true;
+$enable-shadows: true;
+$enable-gradients: true;
+$font-family-sans-serif: 'avenir next', avenir, helvetica, 'helvetica neue', arial, sans-serif;
+
+$brand-primary: #FF4136;
+
+@import './node_modules/bootstrap/scss/bootstrap';
+
+// Util Classes
+@import './_utils';
+
+// General Styles
+@import './_general';
+
+// Login Styles
+@import './_login';
+
+// Pages Styles
+@import './pages/_home';
+@import './pages/_user';
