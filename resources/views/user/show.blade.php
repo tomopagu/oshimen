@@ -22,14 +22,14 @@
                             <img class="card-img img-fluid" alt="{{ $idol->name }}" src="{{ $idol->imageurl }}">
                             <div class="card-img-overlay">
                                 <h4 class="card-title">{{ $idol->name }}<br /><small>({{ $idol->group }})</small></h4>
-                                @if (!Auth::guest())
+                                @if (!Auth::guest() && Auth::user()->id === $user->id)
                                     <a href="{{ url('/user/remove-idol/'.$idol->id) }}" title="remove idol" class="remove-idol">remove</a>
                                 @endif
                             </div>
                         </div>
                     @endforeach
-                    
-                    @if (!Auth::guest())
+
+                    @if (!Auth::guest() && Auth::user()->id === $user->id)
                         <div class="card">
                             <div class="card-block">
                                 <form action="{{ url('/user/add-idol') }}" method="POST">
@@ -47,7 +47,7 @@
                                         </select>
                                     </fieldset>
                                     <button type="submit" class="btn btn-primary btn-block">
-                                        <i class="fa fa-btn fa-plus"></i>Add
+                                        <i class="fa fa-btn fa-plus"></i> Add
                                     </button>
                                 </form>
                             </div>
