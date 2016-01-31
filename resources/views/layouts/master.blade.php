@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{ asset('/styles/app.css') }}">
     </head>
-    <body>
+    <body class="user-color__{{ $userColor }}">
         @yield('content')
-        
+
         <footer class="footer">
             <div class="container">
                 <div class="row">

@@ -11,7 +11,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 
 class UserController extends Controller
-{    
+{
     /**
      * Display the specified resource.
      *
@@ -19,10 +19,10 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($username)
-    {     
+    {
         $user = DB::table('users')->where('username', $username)->first();
         $usersIdols = explode(',', $user->idols);
-        
+
         $myIdols = DB::table('idols')
                     ->whereIn('id', $usersIdols)
                     ->get();
@@ -45,7 +45,7 @@ class UserController extends Controller
             'allIdols' => $allIdols
         ]);
     }
-    
+
     /**
      * Add an idol to the user.
      *
@@ -70,14 +70,14 @@ class UserController extends Controller
             $updatedUser = DB::table('users')
                             ->where('id', $user->id)
                             ->update(['idols' => $idols]);
-            
+
             return redirect('user/' . $user->username)->with([
                 'message-type' => 'success',
                 'message' => 'Added Idol'
             ]);
         }
     }
-    
+
     /**
      * Remove an idol to the user.
      *
@@ -99,7 +99,7 @@ class UserController extends Controller
             $updatedUser = DB::table('users')
                             ->where('id', $user->id)
                             ->update(['idols' => $idols]);
-            
+
             return redirect('user/' . $user->username)->with([
                 'message-type' => 'success',
                 'message' => 'Removed Idol'
@@ -116,9 +116,30 @@ class UserController extends Controller
     {
         if ($request->user()) {
             $user = $request->user();
-            
+
+            $colors = [
+                'aqua',
+                'black',
+                'blue',
+                'gray',
+                'green',
+                'fuchsia',
+                'lime',
+                'maroon',
+                'navy',
+                'olive',
+                'orange',
+                'purple',
+                'red',
+                'silver',
+                'teal',
+                'yellow',
+                'white'
+            ];
+
             return view('user.settings', [
-                'user' => $user
+                'user' => $user,
+                'colors' => $colors
             ]);
         }
     }
