@@ -47,7 +47,12 @@ class IdolController extends Controller
         $idol->group = $request->group;
         $idol->imageurl = $request->imageurl;
 
-        if ($idol->save() && $request->input('add-fave-idol') === 'true') {
+        if (empty($idol->name) && empty($idol->group) && empty($idol->imageurl)) {
+            return back()->withInput()->with([
+                'message-type' => 'danger',
+                'message' => 'Please make sure every field is entered'
+            ]);
+        } elseif ($idol->save() && $request->input('add-fave-idol') === 'true') {
             $newIdol = Idol::where('name', '=', $idol->name)->firstOrFail();
 
             $userIdols = explode(',', $user->idols);
