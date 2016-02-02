@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Idol;
+
+use DB;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -26,7 +29,7 @@ class IdolController extends Controller
      */
     public function create()
     {
-        //
+        return view('idol.add');
     }
 
     /**
@@ -37,7 +40,42 @@ class IdolController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = $request->user();
+        $idol = new Idol;
+
+        $idol->name = $request->name;
+        $idol->group = $request->group;
+        $idol->imageurl = $request->imageurl;
+
+        if ($idol->save() && $request->input('add-fave-idol') === 'true') {
+            $newIdol = Idol::where('name', '=', $idol->name)->firstOrFail();
+
+            $userIdols = explode(',', $user->idols);
+            if (array_search($newIdol->id, $userIdols)) {
+                return redirect('user/' . $user->username)->with([
+                    'message-type' => 'warning',
+                    'message' => 'You already like this idol!'
+                ]);
+            }
+            $userIdols[] = $newIdol->id;
+            $idols = implode(',', $userIdols);
+
+            $updatedUser = DB::table('users')
+                            ->where('id', $user->id)
+                            ->update(['idols' => $idols]);
+
+            return redirect('user/' . $user->username)->with([
+                'message-type' => 'success',
+                'message' => 'Added + Faved ' . $idol->name
+            ]);
+        } elseif ($idol->save()) {
+            return redirect('user/' . $user->username)->with([
+                'message-type' => 'success',
+                'message' => 'Added ' . $idol->name
+            ]);
+        } else {
+            return back()->withInput();
+        }
     }
 
     /**

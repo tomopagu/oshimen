@@ -18,4 +18,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('/user/add-idol', 'UserController@addIdol');
     Route::get('/user/remove-idol/{id}', 'UserController@removeIdol');
     Route::get('/user/{username}', 'UserController@show')->name('profile');
+
+    Route::get('/idol/add', 'IdolController@create')->name('createIdol');
+    Route::post('/idol/add', 'IdolController@store');
 });

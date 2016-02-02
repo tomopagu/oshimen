@@ -46,9 +46,16 @@
                                             @endforeach
                                         </select>
                                     </fieldset>
-                                    <button type="submit" class="btn btn-primary btn-block">
-                                        <i class="fa fa-btn fa-plus"></i> Add
-                                    </button>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <button type="submit" class="btn btn-primary btn-block">
+                                                <i class="fa fa-btn fa-heart"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <a href="{{ route('createIdol') }}" class="btn btn-primary btn-block a-btn"><i class="fa fa-btn fa-question"></i> not found</a>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>
