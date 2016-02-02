@@ -22,7 +22,7 @@
                         @else
                             <a href="{{ url('/user/settings') }}" title="settings">settings</a> // <a href="{{ url('/logout') }}" title="logout">logout</a>
                         @endif
-                        // with love from <a href="https://tomo.pagu.co" title="tomo@pagu">tomo@pagu</a>
+                        <span class="hidden-xs-down">// <span class="hidden-sm-down">with love from </span><a href="https://tomo.pagu.co" title="tomo@pagu">tomo@pagu</a></span>
                     </div>
                 </div>
             </div>

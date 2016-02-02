@@ -26,12 +26,14 @@ video#bgvid {
 
 @media screen and (max-width: 768px) {
     .home-bg {
-        background: url('./../YCL9p7Z1Zag.jpg') #000 no-repeat center center fixed;
+        background: url('./../YCL9p7Z1Zag.jpg') #000 no-repeat bottom right fixed;
         height: 100%;
         width: 100%;
         position: fixed;
     }
-    #bgvid {
-        display: none;
+    #bgvid { display: none; }
+    .home-content {
+        width: 95%;
+        margin: 2% auto 0;
     }
 }

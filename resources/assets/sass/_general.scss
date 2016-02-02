@@ -17,3 +17,7 @@ body {
     background-color: $black;
     color: $white;
 }
+
+@media screen and (max-width: 544px) {
+    .display-1 { font-size: 4rem; }
+}
