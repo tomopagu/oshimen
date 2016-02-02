@@ -59,25 +59,25 @@ $colors: (
                 }
             }
         }
-   } @else if $color == white {
-       body.user-color__#{$color} {
-           a,
-           .btn-primary {
-               color: $black;
-               &:hover { color: lighten($black, 10%); }
-           }
-           a.remove-idol {
-               color: $hex-color;
-               &:hover { color: darken($hex-color, 10%); }
-           }
-           .login-form,
-           .btn-primary,
-           .form-control { border-color: $black; }
-           footer {
-               background-color: $hex-color;
-               border-top: 1px solid $black;
-               color: $black;
-           }
-       }
-   }
+    } @else if $color == white {
+        body.user-color__#{$color} {
+            a,
+            .btn-primary {
+                color: $black;
+                &:hover { color: lighten($black, 10%); }
+            }
+            a.remove-idol {
+                color: $hex-color;
+                &:hover { color: darken($hex-color, 10%); }
+            }
+            .login-form,
+            .btn-primary,
+            .form-control { border-color: $black; }
+            footer {
+                background-color: $hex-color;
+                border-top: 1px solid $black;
+                color: $black;
+            }
+        }
+    }
 }
