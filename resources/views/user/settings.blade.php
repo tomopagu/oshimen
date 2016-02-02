@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="login-form col-xs-12 text-xs-center">
                     <h1>Settings for {{ $user->username }}</h1>
-                    <form role="form" method="POST" action="{{ url('/register') }}">
+                    <form role="form" method="POST" action="{{ url('/user/settings') }}">
                         {!! csrf_field() !!}
 
                         <div class="form-group{{ $errors->has('color') ? ' has-error' : '' }} row">
@@ -50,24 +50,12 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }} row">
-                            <label for="password" class="col-sm-3 form-control-label">password</label>
-                            <div class="col-sm-9">
-                                <input type="password" class="form-control" name="password">
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
                         <hr />
 
                         <div class="form-group{{ $errors->has('new-password') ? ' has-error' : '' }} row">
                             <label for="new-password" class="col-sm-3 form-control-label">new password</label>
                             <div class="col-sm-9">
-                                <input type="new-password" class="form-control" name="new-password">
+                                <input type="password" class="form-control" name="new-password">
                                 @if ($errors->has('new-password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('new-password') }}</strong>
@@ -79,17 +67,20 @@
                         <div class="form-group{{ $errors->has('new-password_confirmation') ? ' has-error' : '' }} row">
                             <label for="new-password_confirmation" class="col-sm-3 form-control-label">confirm new password</label>
                             <div class="col-sm-9">
-                                <input type="new-password" class="form-control" name="new-password_confirmation">
+                                <input type="password" class="form-control" name="new-password_confirmation">
                                 @if ($errors->has('new-password_confirmation'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('new-password_confirmation') }}</strong>
                                     </span>
                                 @endif
                             </div>
+                            <p class="small text-xs-center" style="width: 100%;">Leave the new password fields blank if you don't wish to change your password.</p>
                         </div>
 
+                        <hr />
+
                         <div class="form-group row">
-                            <div class="col-sm-9 col-sm-offset-3">
+                            <div class="col-sm-12">
                                 <button type="submit" class="btn btn-primary btn-block">
                                     <i class="fa fa-btn fa-floppy-o"></i> Save
                                 </button>

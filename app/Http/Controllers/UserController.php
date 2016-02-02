@@ -151,9 +151,23 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $user = $request->user();
+
+        $user->color = $request->input('color');
+        $user->username = $request->input('username');
+        $user->email = $request->input('email');
+        if ($request->input('new-password') === $request->input('new-password_confirmation')) {
+            $user->password = bcrypt($request->input('new-password'));
+        }
+
+        $user->save();
+
+        return redirect('user/' . $user->username)->with([
+            'message-type' => 'success',
+            'message' => 'Updated Settings'
+        ]);
     }
 
     /**
