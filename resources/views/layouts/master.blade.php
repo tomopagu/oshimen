@@ -7,7 +7,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{{ secure_asset('/styles/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('/styles/app.css') }}">
     </head>
     <body class="user-color__{{ $userColor }}">
         @yield('content')
@@ -28,5 +28,5 @@
             </div>
         </footer>
     </body>
-    <script type="text/javascript" src="{{ secure_asset('/js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/js/app.js') }}"></script>
 </html>
