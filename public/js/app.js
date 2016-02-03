@@ -55,10 +55,11 @@
 	var $ = __webpack_require__(2);
 
 	var verticallyCenter = function() {
-	    $('.vertically-center').height($(window).height() - 60);
+	    $('.vertically-center').height($(window).height());
 	}
 
 	module.exports = verticallyCenter;
+
 
 /***/ },
 /* 2 */
