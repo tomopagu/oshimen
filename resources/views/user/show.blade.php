@@ -47,12 +47,12 @@
                                         </select>
                                     </fieldset>
                                     <div class="row">
-                                        <div class="col-sm-6">
+                                        <div class="col-xs-12 col-xl-6">
                                             <button type="submit" class="btn btn-primary btn-block">
                                                 <i class="fa fa-btn fa-heart"></i>
                                             </button>
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-xs-12 col-xl-6">
                                             <a href="{{ route('createIdol') }}" class="btn btn-primary btn-block a-btn"><i class="fa fa-btn fa-question"></i> not found</a>
                                         </div>
                                     </div>

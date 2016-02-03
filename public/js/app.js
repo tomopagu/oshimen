@@ -55,7 +55,9 @@
 	var $ = __webpack_require__(2);
 
 	var verticallyCenter = function() {
-	    $('.vertically-center').height($(window).height());
+	    if ($(window).height() > $('body').height()) {
+	        $('.vertically-center').height($(window).height());
+	    }
 	}
 
 	module.exports = verticallyCenter;
