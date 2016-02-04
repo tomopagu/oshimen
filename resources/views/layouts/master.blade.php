@@ -10,8 +10,6 @@
         <link rel="stylesheet" href="{{ asset('/styles/app.css') }}">
     </head>
     <body class="user-color__{{ $userColor }}">
-        {{ dd($_SERVER) }}
-
         @yield('content')
 
         <footer class="footer">
