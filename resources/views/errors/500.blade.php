@@ -10,9 +10,10 @@
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <h2>503</h2>
+                    <h2>500</h2>
                     <p>
-                        We'll be right back!
+                        Ahh, excuse us!<br />
+                        We accidently broke something
                     </p>
                 </div>
             </div>

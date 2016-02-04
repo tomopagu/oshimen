@@ -10,9 +10,9 @@
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <h2>503</h2>
+                    <h2>404</h2>
                     <p>
-                        We'll be right back!
+                        We could not find the page you were looking for...
                     </p>
                 </div>
             </div>

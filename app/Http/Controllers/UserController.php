@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Idol;
 use App\User;
 
 class UserController extends Controller
@@ -20,7 +21,7 @@ class UserController extends Controller
      */
     public function show($username)
     {
-        $user = DB::table('users')->where('username', $username)->first();
+        $user = User::where('username', $username)->firstOrFail();
         $usersIdols = explode(',', $user->idols);
 
         $myIdols = DB::table('idols')
