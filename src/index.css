@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+	background: rgba(0,32,63,1);
+	color: #fff;
+}
+
+a,
+a:visited {
+	color: #FF4136;
+	transition: all .2s;
+}
+a:hover,
+a:focus {
+	color: #0074D9;
+	transition: all .2s;
+}
