@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+	background: linear-gradient(#F49CC8, #F4F4F4);
+	color: #fff;
+
+	text-align: center;
+}
+
+a,
+a:visited {
+	color: #FF4136;
+	transition: all .2s;
+}
+a:hover,
+a:focus {
+	color: #0074D9;
+	transition: all .2s;
+}
+
+.info {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 15px;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+.info h1 {
+	border-bottom: 2px solid #fff;
+	display: inline-block;
+	margin-bottom: 0;
+}
