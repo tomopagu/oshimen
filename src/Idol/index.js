@@ -19,4 +19,4 @@ class Idol extends Component {
 	}
 }
 
-export default Idol; //eslint-disable-line
+export default Idol;

@@ -45,7 +45,7 @@ class App extends Component {
 					<div className="info">
 						<h1>tomOshi</h1>
 						<p>On the left you can see my Oshis (the idols I support), clicking on them will take you to their twitter or blog.</p>
-						<p>If you have any groups you want to suggest then let me know at <a href="https://twitter.com/tomopagu" title="@tomopagu on twitter">@tomopagu</a>!</p>
+						<p>If you have any groups you want to suggest then let me know at <a href="https://twitter.com/tomouchuu" title="@tomouchuu on twitter">@tomouchuu</a>!</p>
 					</div>
 				</Box>
 			</Flex>
