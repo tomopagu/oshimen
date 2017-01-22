@@ -4,7 +4,7 @@ body {
     min-height: 100vh;
 	font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 
-	background: linear-gradient(to right, #f49cc8, #f4f4f4);
+	background: linear-gradient(to left, #f49cc8, #f4f4f4);
 	color: #fff;
 
 	text-align: center;

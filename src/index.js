@@ -16,6 +16,11 @@ import younapi from './Idol/idols/younapi.jpg';
 import kaede from './Idol/idols/kaede.jpg';
 import mirei from './Idol/idols/mirei.jpg';
 import perorin from './Idol/idols/perorin.jpg';
+import ayunid from './Idol/idols/ayunid.jpg';
+import togaren from './Idol/idols/togaren.jpg';
+import hitochibi from './Idol/idols/hitochibi.jpg';
+import imai from './Idol/idols/imai.jpg';
+import ayaka from './Idol/idols/ayaka.jpg';
 
 import Masonry from 'react-masonry-component';
 const masonryOptions = {
@@ -36,15 +41,21 @@ class App extends Component {
 						<Idol name="Mahiru Kurumizawa" group="Moso Calibration" image={ mahiru } link="https://twitter.com/lunch_mahiru" color="pink" />
 						<Idol name="Kanako Momota" group="Momoiro Clover" image={ kanako } link="http://ameblo.jp/momota-sd/" color="red" />
 						<Idol name="Younapi" group="You'll Melt More" image={ younapi } link="https://twitter.com/mo_younapi" color="white" />
-						<Idol name="Takashima Kaede" group="PassCode" image={ kaede } link="https://twitter.com/PassCode_kaede" color="yellow" />
-						<Idol name="Mirei Hoshina" group="Ebichu" image={ mirei } link="http://lineblog.me/ebichu/hoshinamirei/" color="pink" />
+						<Idol name="Hitochibi" group="uijin" image={ hitochibi } link="https://twitter.com/hitochibi_uijin" color="blue" />
+						<Idol name="Togaren" group="Zenbu Kimi No Sei Da" image={ togaren } link="https://twitter.com/zenkimi_togaren" color="pink" />
 						<Idol name="Rin Kaname (Perorin)" group="ベボガ！" image={ perorin } link="https://twitter.com/peroperorinko01" color="yellow" />
+						<Idol name="Ayaka" group="Lyrical School" image={ ayaka } link="https://twitter.com/ayaka831" color="blue" />
+						<Idol name="Mai Imai" group="Musubizm" image={ imai } link="https://twitter.com/musubizm_mai" color="white" />
+						<Idol name="Takashima Kaede" group="PassCode" image={ kaede } link="https://twitter.com/PassCode_kaede" color="yellow" />
+						<Idol name="Ayuni D" group="BiSH" image={ ayunid } link="https://twitter.com/AYUNiD_BiSH" color="black" />
+						<Idol name="Mirei Hoshina" group="Ebichu" image={ mirei } link="http://lineblog.me/ebichu/hoshinamirei/" color="pink" />
 					</Masonry>
 				</Box>
 				<Box col={4} md={3}>
 					<div className="info">
 						<h1>tomOshi</h1>
 						<p>On the left you can see my Oshis (the idols I support), clicking on them will take you to their twitter or blog.</p>
+						<p><a href="https://twitter.com/tomouchuu/lists/oshis">Full Twitter List</a></p>
 						<p>If you have any groups you want to suggest then let me know at <a href="https://twitter.com/tomouchuu" title="@tomouchuu on twitter">@tomouchuu</a>!</p>
 					</div>
 				</Box>
