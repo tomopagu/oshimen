@@ -21,6 +21,7 @@ import togaren from './Idol/idols/togaren.jpg';
 import hitochibi from './Idol/idols/hitochibi.jpg';
 import imai from './Idol/idols/imai.jpg';
 import ayaka from './Idol/idols/ayaka.jpg';
+import matsushitareona from './Idol/idols/matsushitareona.jpg';
 
 import Masonry from 'react-masonry-component';
 const masonryOptions = {
@@ -55,6 +56,13 @@ class App extends Component {
 						<Idol name="Takashima Kaede" group="PassCode" image={ kaede } link="https://twitter.com/PassCode_kaede" color="yellow" />
 						<Idol name="Ayuni D" group="BiSH" image={ ayunid } link="https://twitter.com/AYUNiD_BiSH" color="black" />
 						<Idol name="Mirei Hoshina" group="Ebichu" image={ mirei } link="http://www.lineblog.me/tag/%E6%98%9F%E5%90%8D%E7%BE%8E%E6%80%9C?blog_name=ebichu" color="pink" />
+					</Masonry>
+					<hr />
+					<Masonry
+						className={'idols'}
+						options={ masonryOptions }
+					>
+						<Idol name="Matsushita Reona" group="ManekiKecak" image={ matsushitareona } link="https://twitter.com/matsushitareona" color="red" />
 					</Masonry>
 				</Box>
 				<Box col={4} md={3}>
