@@ -38,6 +38,12 @@ class App extends Component {
 					>
 						<Idol name="Furukawa Mirin" group="Dempagumi.Inc" image={ mirin } link="https://twitter.com/FurukawaMirin" color="red" />
 						<Idol name="Nanase Gumi" group="Band Ja Nai Mon" image={ gumi } link="https://twitter.com/gumi_nanase" color="aqua" />
+					</Masonry>
+					<hr />
+					<Masonry
+						className={'idols'}
+						options={ masonryOptions }
+					>
 						<Idol name="Mahiru Kurumizawa" group="Moso Calibration" image={ mahiru } link="https://twitter.com/lunch_mahiru" color="pink" />
 						<Idol name="Kanako Momota" group="Momoiro Clover" image={ kanako } link="http://ameblo.jp/momota-sd/" color="red" />
 						<Idol name="Younapi" group="You'll Melt More" image={ younapi } link="https://twitter.com/mo_younapi" color="white" />
