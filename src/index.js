@@ -52,11 +52,14 @@ class App extends Component {
 					</Masonry>
 				</Box>
 				<Box col={4} md={3}>
-					<div className="info">
-						<h1>tomOshi</h1>
-						<p>On the left you can see my Oshis (the idols I support), clicking on them will take you to their twitter or blog.</p>
-						<p><a href="https://twitter.com/tomouchuu/lists/oshis">Full Twitter List</a></p>
-						<p>If you have any groups you want to suggest then let me know at <a href="https://twitter.com/tomouchuu" title="@tomouchuu on twitter">@tomouchuu</a>!</p>
+					<div className="info-area">
+						<div className="info">
+							<h1>tomOshi</h1>
+							<p>On the left you can see my Oshis (the idols I support), clicking on them will take you to their twitter or blog.</p>
+							<p>The top list are my kamioshis, then you have general oshis and then some new oshis I'm starting to get into.</p>
+							<p><a href="https://twitter.com/tomouchuu/lists/oshis">Full Twitter List</a></p>
+							<p>If you have any groups you want to suggest then let me know at <a href="https://twitter.com/tomouchuu" title="@tomouchuu on twitter">@tomouchuu</a>!</p>
+						</div>
 					</div>
 				</Box>
 			</Flex>
