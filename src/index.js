@@ -51,7 +51,6 @@ class App extends Component {
 						<Idol name="Younapi" group="You'll Melt More" image={ younapi } link="https://twitter.com/mo_younapi" color="white" />
 						<Idol name="Togaren" group="Zenbu Kimi No Sei Da" image={ togaren } link="https://twitter.com/zenkimi_togaren" color="pink" />
 						<Idol name="Rin Kaname (Perorin)" group="ベボガ！" image={ perorin } link="https://twitter.com/peroperorinko01" color="yellow" />
-						<Idol name="Ayaka" group="Lyrical School" image={ ayaka } link="https://twitter.com/ayaka831" color="blue" />
 						<Idol name="Mai Imai" group="Musubizm" image={ imai } link="https://twitter.com/musubizm_mai" color="white" />
 						<Idol name="Takashima Kaede" group="PassCode" image={ kaede } link="https://twitter.com/PassCode_kaede" color="yellow" />
 						<Idol name="Ayuni D" group="BiSH" image={ ayunid } link="https://twitter.com/AYUNiD_BiSH" color="black" />
@@ -63,6 +62,7 @@ class App extends Component {
 						options={ masonryOptions }
 					>
 						<Idol name="Matsushita Reona" group="ManekiKecak" image={ matsushitareona } link="https://twitter.com/matsushitareona" color="red" />
+						<Idol name="Ayaka" group="Lyrical School" image={ ayaka } link="https://twitter.com/ayaka831" color="blue" />
 					</Masonry>
 				</Box>
 				<Box col={4} md={3}>
