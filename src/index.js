@@ -39,6 +39,7 @@ class App extends Component {
 					>
 						<Idol name="Furukawa Mirin" group="Dempagumi.Inc" image={ mirin } link="https://twitter.com/FurukawaMirin" color="red" />
 						<Idol name="Nanase Gumi" group="Band Ja Nai Mon" image={ gumi } link="https://twitter.com/gumi_nanase" color="aqua" />
+						<Idol name="Hitochibi" group="uijin" image={ hitochibi } link="https://twitter.com/hitochibi_uijin" color="blue" />
 					</Masonry>
 					<hr />
 					<Masonry
@@ -48,7 +49,6 @@ class App extends Component {
 						<Idol name="Mahiru Kurumizawa" group="Moso Calibration" image={ mahiru } link="https://twitter.com/lunch_mahiru" color="pink" />
 						<Idol name="Kanako Momota" group="Momoiro Clover" image={ kanako } link="http://ameblo.jp/momota-sd/" color="red" />
 						<Idol name="Younapi" group="You'll Melt More" image={ younapi } link="https://twitter.com/mo_younapi" color="white" />
-						<Idol name="Hitochibi" group="uijin" image={ hitochibi } link="https://twitter.com/hitochibi_uijin" color="blue" />
 						<Idol name="Togaren" group="Zenbu Kimi No Sei Da" image={ togaren } link="https://twitter.com/zenkimi_togaren" color="pink" />
 						<Idol name="Rin Kaname (Perorin)" group="ベボガ！" image={ perorin } link="https://twitter.com/peroperorinko01" color="yellow" />
 						<Idol name="Ayaka" group="Lyrical School" image={ ayaka } link="https://twitter.com/ayaka831" color="blue" />
