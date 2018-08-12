@@ -24,11 +24,5 @@
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
-  },
-  "now": {
-    "alias": "tomoshi.uchuu.io",
-    "engines": {
-      "node": "6.3.1"
-    }
   }
 }
